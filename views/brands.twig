@@ -10,7 +10,7 @@
   <div class="container">
     {% include 'header.html' %}
 
-  <h3>Brands:</h3>
+  <h3>User:</h3>
   	{% if brands is not empty %}
   		<ul>
   		{% for brand in brands %}
@@ -21,7 +21,7 @@
   		<h4>There are no brands entered yet.</h4>
   	{% endif %}
   	<form action="/add_brand" method="post">
-  		<label for="brand_name">Add a brand</label>
+  		<label for="brand_name">Add a skill</label>
   		<input id="brand_name" name="brand_name" class="form-class" type="text" autofocus="autofocus">
   		<button type="submit">Submit</button>
   	</form>
