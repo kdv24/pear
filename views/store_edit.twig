@@ -2,13 +2,12 @@
 <html>
 <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-	<title>Shoe Store</title>
+  <link rel="stylesheet" href="css/styles.css">
+	<title>pear</title>
 </head>
   <body>
   <div class="container">
-    <header class="jumbotron">
-    <h1><a href='/'>Shoes shoes shoes!</a></h1>
-  </header>
+    {% include 'header.html' %}
   	{% if stores is not empty%}
   		<h3>{{ store.getStoreName }}</h3>
   		<form action="/store_update/{{ store.getId }}" method="post">

@@ -2,13 +2,14 @@
 <html>
 <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-	<title>Shoe Store</title>
+  <link rel="stylesheet" href="css/styles.css">
+
+	<title>pear</title>
 </head>
 <body>
   <div class="container">
-    <header class="jumbotron">
-    <h1><a href='/'>Shoes shoes shoes!</a></h1>
-    </header>
+    {% include 'header.html' %}
+
   <h3>Brands:</h3>
   	{% if brands is not empty %}
   		<ul>
