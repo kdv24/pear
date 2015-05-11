@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<title>Shoe Store</title>
+</head>
+<body>
+<div class="container">
+<header class="jumbotron">
+<h1><a href='/'>Shoes shoes shoes!</a></h1>
+</header>
+	<h3>{{ brand.getBrandName }}</h3>
+	<form action="/brand_delete" method="post">
+		<input name="_method" type="hidden" value="delete">
+		<input name="brand_id" id="brand_id" value="{{ brand.getId }}" type="hidden">
+		<button class="btn" type="submit">Delete brand</button>
+	<form>	
+<br>
+<br>
+	<button><a href="/stores">List of all brands</a></button>
+<br>
+<br>
+	<button><a href="/">Home</a></button>
+</div>
+</body>
+</html>
